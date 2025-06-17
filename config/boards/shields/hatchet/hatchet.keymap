@@ -43,7 +43,6 @@
             bindings = <&sl 3>;
             key-positions = <0 9>;
             layers = <0>;
-            release-after-ms = <3000>;
         };
     };
 
