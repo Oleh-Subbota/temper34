@@ -51,9 +51,9 @@
 
         Colemak_dh {
             bindings = <
-                &kp Q             &kp D             &kp F         &kp P          &kp B             &kp J               &kp L            &kp U          &kp Y          &kp SLASH
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T   &kp G             &kp M               &hmr RSHFT N     &hmr RCTRL E   &hmrs RALT I    &hmrs RGUI O
-                &kp X             &kp C             &kp W         &kp V          &kp Z             &kp K               &kp H            &kp COMMA      &kp DOT        &kp SQT
+                &kp Q             &kp D             &kp F         &kp P          &kp B             &kp J               &kp L            &kp U          &kp Y          &kp SQT
+                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T   &kp G             &kp M               &hmr RSHFT N     &hmr RCTRL E   &hmrs RALT I   &hmrs RGUI O
+                &kp X             &kp C             &kp W         &kp V          &kp Z             &kp K               &kp H            &kp COMMA      &kp DOT        &kp SLASH
                                                                   &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
             >;
         };
@@ -62,32 +62,32 @@
             display-name = "Symbol";
 
             bindings = <
-                &kp POUND         &kp LBRC         &kp RBRC          &kp ASTERISK       &kp TILDE        &kp PLUS    &kp INS   &kp PSCRN      &none          &none
+                &kp POUND         &kp LBRC         &kp RBRC          &kp ASTERISK       &kp TILDE        &kp PLUS    &kp INS   &kp PSCRN      &none          &kp GRAVE
                 &hmrs LGUI UNDER  &hmrs LALT LPAR  &hmr LCTRL RPAR   &hmr LSHFT DOLLAR  &none            &kp MINUS   &kp PIPE  &kp AMPERSAND  &kp BACKSLASH  &kp PERCENT
-                &kp EXCLAMATION   &kp LBKT         &kp RBKT          &kp AT_SIGN        &kp CARET        &kp EQUAL   &kp GT    &kp SEMI       &kp COLON      &kp GRAVE 
+                &kp EXCLAMATION   &kp LBKT         &kp RBKT          &kp AT_SIGN        &kp CARET        &kp EQUAL   &kp GT    &kp SEMI       &kp COLON      &none 
                                                          	     &trans             &trans           &trans      &trans
             >;
         };
 
         fn {
-            display-name = "NumFnNav";
+            display-name = "NumNav";
 
             bindings = <
-                &none     &hmr F7 N7  &hmr F8 N8  &hmr F9 N9  &kp F10       &none   &kp HOME          &kp PAGE_DOWN            &kp PG_UP             &kp END
-                &none     &hmr F4 N4  &hmr F5 N5  &hmr F6 N6  &kp F11       &none   &hmrs RSHFT LEFT  &hmrs RCTRL DOWN_ARROW   &hmr RALT UP_ARROW    &hmr RGUI RIGHT
-                &kp DOT   &hmr F1 N1  &hmr F2 N2  &hmr F3 N3  &kp F12       &none   &none             &kp C_VOL_DN             &kp C_VOL_UP          &none
-                                                  &kp N0      &trans        &trans  &trans
+                &none     &kp N7         &kp N8         &kp N9         &none        &kp HOME          &kp PAGE_DOWN            &kp PG_UP             &kp END           &none
+                &kp LGUI  &hmrs LALT N4  &hmr LCTRL N5  &hmr LSHFT N6  &none        &hmrs RSHFT LEFT  &hmrs RCTRL DOWN_ARROW   &hmr RALT UP_ARROW    &hmr RGUI RIGHT   &none
+                &kp DOT   &kp N1         &kp N2         &kp N3         &none        &none             &kp C_VOL_DN             &kp C_VOL_UP          &none             &none
+                                                        &kp N0         &trans       &trans            &trans
             >;
         };
 
-        bluetooth {
-            display-name = "bluetooth";
+        fnbt {
+            display-name = "fnbt";
 
             bindings = <
-                &none  &none          &none          &none              &none        &none  &none         &none         &none         &none
-                &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2      &none        &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
-                &none  &none          &bt BT_CLR     &bt BT_CLR_ALL     &none        &none  &bt BT_NXT    &bt BT_PRV    &none         &none
-                                                     &none              &none        &none  &none
+                &kp F9  &kp F10  &kp F11  &kp F12  &none        &none  &bt BT_SEL 0  &bt BT_DISC 0  &bt BT_NXT  &none
+                &kp F5  &kp F6   &kp F7   &kp F8   &none        &none  &bt BT_SEL 1  &bt BT_DISC 1  &bt BT_PRV  &none
+                &kp F1  &kp F2   &kp F3   &kp F4   &none        &none  &bt BT_SEL 2  &bt BT_DISC 2  &none       &none
+                                          &none    &none        &none  &none
             >;
         };
     };
