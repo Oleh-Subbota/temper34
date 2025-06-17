@@ -73,9 +73,9 @@
             display-name = "NumNav";
 
             bindings = <
-                &none     &kp N7         &kp N8         &kp N9         &none        &kp HOME  &kp PAGE_DOWN            &kp PG_UP             &kp END           &none
-                &kp LGUI  &hmrs LALT N4  &hmr LCTRL N5  &hmr LSHFT N6  &none        &kp LEFT  &hmr RSHFT DOWN_ARROW    &hmr TCTRL UP_ARROW   &hmrs LALT RIGHT  &kp RGUI
-                &kp DOT   &kp N1         &kp N2         &kp N3         &none        &none     &kp C_VOL_DN             &kp C_VOL_UP          &none             &none
+                &none     &kp N7         &kp N8         &kp N9         &none        &kp HOME  &kp PAGE_DOWN    &kp PG_UP      &kp END           &none
+                &kp LGUI  &hmrs LALT N4  &hmr LCTRL N5  &hmr LSHFT N6  &none        &kp LEFT  &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &kp RGUI
+                &kp DOT   &kp N1         &kp N2         &kp N3         &none        &none     &kp C_VOL_DN     &kp C_VOL_UP   &none             &none
                                                         &kp N0         &trans       &trans    &trans
             >;
         };
