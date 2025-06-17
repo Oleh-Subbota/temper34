@@ -52,7 +52,7 @@
         Colemak_dh {
             bindings = <
                 &kp Q             &kp D             &kp F         &kp P          &kp B             &kp J               &kp L            &kp U          &kp Y          &kp SLASH
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T   &kp G             &kp M               &hmr RSHFT N     &hmr RCTRL E   &hmrs RALT I   &hmrs RGUI O
+                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T   &kp G             &kp M               &hmr RSHFT N     &hmr RCTRL E   &hmrs RALT I    &hmrs RGUI O
                 &kp X             &kp C             &kp W         &kp V          &kp Z             &kp K               &kp H            &kp COMMA      &kp DOT        &kp SQT
                                                                   &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
             >;
@@ -84,7 +84,7 @@
             display-name = "bluetooth";
 
             bindings = <
-                &none  &none          &none          &none              &none        &none  &none         &none         &none         &none
+                &none  &none          &none          &kp q              &none        &none  &none         &none         &none         &none
                 &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2      &none        &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
                 &none  &none          &bt BT_CLR     &bt BT_CLR_ALL     &none        &none  &bt BT_NXT    &bt BT_PRV   &none         &none
                                                      &none              &none        &none  &none
