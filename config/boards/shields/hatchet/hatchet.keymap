@@ -102,7 +102,7 @@
 
             bindings = <
                 &kp SQT           &kp COMMA         &kp DOT       &kp P          &kp Y             &kp F               &kp G            &kp C          &kp R          &kp L
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT O  &hmr LCTRL E  &hmr LSHFT O   &kp I             &kp D               &hmr RSHFT H     &hmr RCTRL T   &hmrs RALT N   &hmrs RGUI S
+                &hmrs LEFT_GUI A  &hmrs LEFT_ALT O  &hmr LCTRL E  &hmr LSHFT U   &kp I             &kp D               &hmr RSHFT H     &hmr RCTRL T   &hmrs RALT N   &hmrs RGUI S
                 &kp SLASH         &kp Q             &kp J         &kp K          &kp X             &kp B               &kp M            &kp W          &kp V          &kp Z
                                                                   &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
             >;
