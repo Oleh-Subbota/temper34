@@ -44,6 +44,12 @@
             key-positions = <0 9>;
             layers = <0>;
         };
+
+	dvorak {
+            bindings = <&tog 4>;
+            key-positions = <29 20>;
+            layers = <4 0>;
+        };
     };
 
     keymap {
@@ -88,6 +94,17 @@
                 &kp F5  &kp F6   &kp F7   &kp F8   &none        &none  &bt BT_SEL 1  &bt BT_DISC 1  &bt BT_PRV  &none
                 &kp F1  &kp F2   &kp F3   &kp F4   &none        &none  &bt BT_SEL 2  &bt BT_DISC 2  &none       &none
                                           &none    &none        &none  &none
+            >;
+        };
+
+        dvorak {
+            display-name = "dvorak";
+
+            bindings = <
+                &kp SQT           &kp COMMA         &kp DOT       &kp P          &kp Y             &kp F               &kp G            &kp C          &kp R          &kp L
+                &hmrs LEFT_GUI A  &hmrs LEFT_ALT O  &hmr LCTRL E  &hmr LSHFT O   &kp I             &kp D               &hmr RSHFT H     &hmr RCTRL T   &hmrs RALT N   &hmrs RGUI S
+                &kp SLASH         &kp Q             &kp J         &kp K          &kp X             &kp B               &kp M            &kp W          &kp V          &kp Z
+                                                                  &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
             >;
         };
     };
