@@ -97,13 +97,13 @@
             >;
         };
 
-        dvorak {
-            display-name = "dvorak";
+        ahei {
+            display-name = "ahei";
 
             bindings = <
-                &kp SQT           &kp COMMA         &kp DOT       &kp P          &kp Y             &kp F               &kp G            &kp C          &kp R          &kp L
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT O  &hmr LCTRL E  &hmr LSHFT I   &kp U             &kp D               &hmr RSHFT N     &hmr RCTRL T   &hmrs RALT H   &hmrs RGUI S
-                &kp SLASH         &kp Q             &kp J         &kp K          &kp X             &kp B               &kp M            &kp W          &kp V          &kp Z
+                &kp SLASH         &kp P             &kp O         &kp U          &kp Y             &kp Q               &kp G            &kp D          &kp L          &kp W
+                &hmrs LEFT_GUI A  &hmrs LEFT_ALT H  &hmr LCTRL E  &hmr LSHFT I   &kp COMMA         &kp F               &hmr RSHFT S     &hmr RCTRL T   &hmrs RALT N   &hmrs RGUI R
+                &kp J             &kp SQT           &kp K         &kp DOT        &kp X             &kp B               &kp C            &kp M          &kp V          &kp Z
                                                                   &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
             >;
         };
