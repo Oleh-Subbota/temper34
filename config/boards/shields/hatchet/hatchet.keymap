@@ -44,12 +44,6 @@
             key-positions = <0 9>;
             layers = <0>;
         };
-
-	dvorak {
-            bindings = <&tog 4>;
-            key-positions = <29 20>;
-            layers = <4 0>;
-        };
     };
 
     keymap {
@@ -57,10 +51,10 @@
 
         Colemak_dh {
             bindings = <
-                &kp Q             &kp D             &kp F         &kp P          &kp B             &kp J               &kp L            &kp U          &kp Y          &kp SQT
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T   &kp G             &kp M               &hmr RSHFT N     &hmr RCTRL E   &hmrs RALT I   &hmrs RGUI O
-                &kp X             &kp C             &kp W         &kp V          &kp Z             &kp K               &kp H            &kp COMMA      &kp DOT        &kp SLASH
-                                                                  &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
+                &kp Q             &kp W             &kp F         &kp P         &kp B                     &kp J             &kp L            &kp U         &kp Y         &kp SQT
+                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT I  &hmrs RGUI O
+                &kp Z             &kp X             &kp C         &kp D         &kp V                     &kp K             &kp H            &kp COMMA     &kp DOT       &kp SLASH
+                                                                  &lt 1 SPACE   &hmr LCTRL TAB            &hmr RSHFT ENTER  &lt 2 BACKSPACE
             >;
         };
 
@@ -68,10 +62,10 @@
             display-name = "Symbol";
 
             bindings = <
-                &kp POUND         &kp LBRC         &kp RBRC          &kp ASTERISK       &kp TILDE        &kp PLUS    &kp INS   &kp PSCRN      &none          &kp GRAVE
-                &hmrs LGUI UNDER  &hmrs LALT LPAR  &hmr LCTRL RPAR   &hmr LSHFT DOLLAR  &none            &kp MINUS   &kp PIPE  &kp AMPERSAND  &kp BACKSLASH  &kp PERCENT
-                &kp EXCLAMATION   &kp LBKT         &kp RBKT          &kp AT_SIGN        &kp CARET        &kp EQUAL   &kp GT    &kp SEMI       &kp COLON      &none 
-                                                         	     &trans             &trans           &trans      &trans
+                &kp POUND         &kp LBRC         &kp RBRC         &kp ASTERISK       &kp TILDE            &kp PLUS   &kp INS   &kp PSCRN      &none          &kp GRAVE
+                &hmrs LGUI UNDER  &hmrs LALT LPAR  &hmr LCTRL RPAR  &hmr LSHFT DOLLAR  &none                &kp MINUS  &kp PIPE  &kp AMPERSAND  &kp BACKSLASH  &kp PERCENT
+                &kp EXCLAMATION   &kp LBKT         &kp RBKT         &kp AT_SIGN        &kp CARET            &kp EQUAL  &kp GT    &kp SEMI       &kp COLON      &none 
+                                                         	    &trans             &trans               &trans     &trans
             >;
         };
 
@@ -79,10 +73,10 @@
             display-name = "NumNav";
 
             bindings = <
-                &none     &kp N7         &kp N8         &kp N9         &none        &kp HOME  &kp PAGE_DOWN    &kp PG_UP      &kp END           &none
-                &kp LGUI  &hmrs LALT N4  &hmr LCTRL N5  &hmr LSHFT N6  &none        &kp LEFT  &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &kp RGUI
-                &kp DOT   &kp N1         &kp N2         &kp N3         &none        &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp COLON         &none
-                                                        &kp N0         &trans       &trans    &trans
+                &none     &kp N7         &kp N8         &kp N9         &none           &kp HOME  &kp PAGE_DOWN    &kp PG_UP      &kp END           &none
+                &kp LGUI  &hmrs LALT N4  &hmr LCTRL N5  &hmr LSHFT N6  &none           &kp LEFT  &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &kp RGUI
+                &kp DOT   &kp N1         &kp N2         &kp N3         &none           &none     &kp C_VOL_DN     &kp C_VOL_UP   &kp COLON         &none
+                                                        &kp N0         &trans          &trans    &trans
             >;
         };
 
@@ -94,17 +88,6 @@
                 &kp F5  &kp F6   &kp F7   &kp F8   &none        &none  &bt BT_SEL 1  &bt BT_DISC 1  &bt BT_PRV  &none
                 &kp F1  &kp F2   &kp F3   &kp F4   &none        &none  &bt BT_SEL 2  &bt BT_DISC 2  &none       &none
                                           &none    &none        &none  &none
-            >;
-        };
-
-        ahei {
-            display-name = "ahei";
-
-            bindings = <
-                &kp SLASH         &kp P             &kp O         &kp U          &kp Y             &kp Q               &kp G            &kp D          &kp L          &kp W
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT H  &hmr LCTRL E  &hmr LSHFT I   &kp COMMA         &kp F               &hmr RSHFT S     &hmr RCTRL T   &hmrs RALT N   &hmrs RGUI R
-                &kp J             &kp SQT           &kp K         &kp DOT        &kp X             &kp B               &kp C            &kp M          &kp V          &kp Z
-                                                                  &lt 1 SPACE    &hmr LCTRL TAB    &hmr RSHFT ENTER    &lt 2 BACKSPACE
             >;
         };
     };
