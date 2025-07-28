@@ -1,0 +1,5 @@
+config SHIELD_TEMPER34_LEFT
+    def_bool $(shields_list_contains,temper34_left)
+
+config SHIELD_TEMPER34_RIGHT
+    def_bool $(shields_list_contains,temper34_right)

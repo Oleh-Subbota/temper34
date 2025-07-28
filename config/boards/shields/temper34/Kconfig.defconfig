@@ -1,15 +1,15 @@
-if SHIELD_HATCHET_LEFT
+if SHIELD_TEMPER34_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Hatchet"
+    default "Temper34"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_HATCHET_LEFT || SHIELD_HATCHET_RIGHT
+if SHIELD_TEMPER34_LEFT || SHIELD_TEMPER34_RIGHT
 
 config ZMK_SPLIT
     default y

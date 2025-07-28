@@ -1,5 +1,0 @@
-config SHIELD_HATCHET_LEFT
-    def_bool $(shields_list_contains,hatchet_left)
-
-config SHIELD_HATCHET_RIGHT
-    def_bool $(shields_list_contains,hatchet_right)
