@@ -24,6 +24,17 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
+
+        taptog: taptog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPTOG";
+            bindings = <&kp>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <175>;
+        };
     };
 
     combos {
@@ -47,7 +58,7 @@
 
         caps {
             bindings = <&caps_word>;
-            key-positions = <4 5>;
+            key-positions = <31 32>;
         };
     };
 
@@ -56,10 +67,10 @@
 
         Colemak_dh {
             bindings = <
-                &kp Q             &kp W             &kp F         &kp P         &kp B                     &kp J             &kp L            &kp U         &kp Y         &kp SQT
+                &kp Q             &hmrs TAB W       &kp F         &kp P         &kp B                     &hmr HOME J       &kp L            &kp U         &hmrs END Y   &kp SQT
                 &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT I  &hmrs RGUI O
                 &kp Z             &kp X             &kp C         &kp D         &kp V                     &kp K             &kp H            &kp COMMA     &kp DOT       &kp SLASH
-                                                                  &lt 1 SPACE   &hmr LCTRL TAB            &hmr RSHFT ENTER  &lt 2 BACKSPACE
+                                                                  &lt 1 SPACE   &taptog LCTRL 4           &hmr RSHFT ENTER  &lt 2 BACKSPACE
             >;
         };
 
@@ -70,7 +81,7 @@
                 &kp POUND         &kp LBRC         &kp RBRC         &kp ASTERISK       &kp TILDE            &kp PLUS   &kp INS   &kp PSCRN      &none          &kp GRAVE
                 &hmrs LGUI UNDER  &hmrs LALT LPAR  &hmr LCTRL RPAR  &hmr LSHFT DOLLAR  &none                &kp MINUS  &kp PIPE  &kp AMPERSAND  &kp BACKSLASH  &kp PERCENT
                 &kp EXCLAMATION   &kp LBKT         &kp RBKT         &kp AT_SIGN        &kp CARET            &kp EQUAL  &kp GT    &kp SEMI       &kp COLON      &none 
-                                                         	    &trans             &trans               &trans     &trans
+                                                         	        &trans             &trans               &trans     &trans
             >;
         };
 
@@ -95,5 +106,13 @@
                                           &none    &none        &none  &none
             >;
        };
+        util {
+            bindings = <
+                &hmrs F1 N1       &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5        &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0
+                &hmrs LGUI MINUS  &hmrs LALT LBRC  &hmr LCTRL RBRC  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
+                &bt BT_SEL 0      &bt BT_SEL 1     &none            &none             &none             &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
+                                                                    &trans            &trans            &trans      &trans
+            >;
+        };
     };
  };
