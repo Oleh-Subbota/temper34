@@ -25,15 +25,13 @@
             tapping-term-ms = <200>;
         };
 
-        taptog: taptog {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPTOG";
-            bindings = <&kp>, <&tog>;
+        tdbt: tdbt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBT";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_SEL 0>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <175>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -67,10 +65,10 @@
 
         Colemak_dh {
             bindings = <
-                &kp Q             &hmrs TAB W       &kp F         &kp P         &kp B                     &hmr HOME J       &kp L            &kp U         &hmrs END Y   &kp SQT
-                &hmrs LEFT_GUI A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT I  &hmrs RGUI O
-                &kp Z             &kp X             &kp C         &kp D         &kp V                     &kp K             &kp H            &kp COMMA     &kp DOT       &kp SLASH
-                                                                  &lt 1 SPACE   &taptog LCTRL 4           &hmr RSHFT ENTER  &lt 2 BACKSPACE
+                &kp Q  &kp W             &kp F         &kp P         &kp B                     &hmr HOME J       &kp L            &kp U         &hmrs END Y   &kp SQT
+                &kp A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT I  &kp O
+                &kp Z  &kp X             &kp C         &kp D         &kp V                     &kp K             &kp H            &kp COMMA     &kp DOT       &kp SLASH
+                                                       &lt 4 SPACE   &hmr LCTRL TAB            &hmr RSHFT ENTER  &hmr RGUI BACKSPACE
             >;
         };
 
@@ -109,8 +107,8 @@
         util {
             bindings = <
                 &hmrs F1 N1       &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5        &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0
-                &hmrs LGUI MINUS  &hmrs LALT LBRC  &hmr LCTRL RBRC  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
-                &bt BT_SEL 0      &bt BT_SEL 1     &none            &none             &none             &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
+                &hmrs LGUI MINUS  &hmrs LALT LBKT  &hmr LCTRL RBKT  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
+                &none             &none            &none            &tdbt             &bt BT_CLR        &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
                                                                     &trans            &trans            &trans      &trans
             >;
         };
