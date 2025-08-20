@@ -64,8 +64,8 @@
 
         Colemak_dh {
             bindings = <
-                &kp Q  &kp W             &kp F         &kp P         &kp B                     &hmr HOME J       &kp L            &kp U         &hmrs END Y   &kp SQT
-                &kp A  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT I  &kp O
+                &kp Q  &kp W             &kp F         &kp P         &kp B                     &hmr HOME J       &kp L            &kp O         &hmrs END U   &kp SQT
+                &kp Y  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT A  &kp I
                 &kp Z  &kp X             &kp C         &kp D         &kp V                     &kp K             &kp H            &kp COMMA     &kp DOT       &kp SLASH
                                                        &lt 1 SPACE   &hmr LCTRL TAB            &hmr RGUI ENTER   &hmr RSHFT BACKSPACE
             >;
