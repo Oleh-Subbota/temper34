@@ -75,17 +75,17 @@
             bindings = <
                 &hmrs F1 N1       &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5        &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0
                 &hmrs LGUI MINUS  &hmrs LALT LBKT  &hmr LCTRL RBKT  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
-                &none             &none            &none            &tdbt             &bt BT_CLR        &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
+                &none             &kp LPAR         &kp RPAR         &tdbt             &bt BT_CLR        &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
                                                                     &trans            &trans            &trans      &trans
             >;
         };
 
-        dvorak {
+        poutea {
             bindings = <
-                &kp SQT    &kp COMMA  &kp DOT  &kp P         &kp Y                     &kp F             &kp G   &kp C  &kp R  &kp L
-                &kp A      &kp O      &kp E    &kp U         &kp I                     &kp D             &kp H   &kp T  &kp N  &kp S
-                &kp SLASH  &kp Q      &kp J    &kp K         &kp X                     &kp B             &kp M   &kp W  &kp V  &kp Z
-                                               &lt 1 SPACE   &hmr LCTRL TAB            &hmr RGUI ENTER   &hmr RSHFT BACKSPACE
+                &kp K  &kp J             &kp F         &kp L         &kp M                     &hmr HOME B       &kp P            &kp O         &hmrs END U   &kp SQT
+                &kp Y  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT N  &kp H                     &kp D             &hmr RSHFT T     &hmr RCTRL E  &hmrs RALT A  &kp I
+                &kp Z  &kp X             &kp C         &kp V         &kp Q                     &kp W             &kp G            &kp COMMA     &kp DOT       &kp SLASH
+                                                       &trans        &trans                    &trans            &trans
             >;
         };
     };
