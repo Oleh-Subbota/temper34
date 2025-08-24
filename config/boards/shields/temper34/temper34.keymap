@@ -52,21 +52,16 @@
             bindings = <&caps_word>;
             key-positions = <31 32>;
         };
-        
-        dvorak {
-            bindings = <&tog 2>;
-            key-positions = <20 29>;
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Colemak_dh {
+        Colepoq {
             bindings = <
-                &kp Q  &kp W             &kp F         &kp P         &kp B                     &hmr HOME J       &kp L            &kp O         &hmrs END U   &kp SQT
-                &kp Y  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT A  &kp I
-                &kp Z  &kp X             &kp C         &kp D         &kp V                     &kp K             &kp H            &kp COMMA     &kp DOT       &kp SLASH
+                &kp Y  &kp W             &kp F         &kp P         &kp B                     &hmr HOME K       &kp L            &kp O         &hmrs END Q   &kp SQT
+                &kp U  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT A  &kp I
+                &kp Z  &kp X             &kp C         &kp D         &kp V                     &kp J             &kp H            &kp COMMA     &kp DOT       &kp SLASH
                                                        &lt 1 SPACE   &hmr LCTRL TAB            &hmr RGUI ENTER   &hmr RSHFT BACKSPACE
             >;
         };
@@ -77,15 +72,6 @@
                 &hmrs LGUI MINUS  &hmrs LALT LBKT  &hmr LCTRL RBKT  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
                 &none             &kp LPAR         &kp RPAR         &tdbt             &bt BT_CLR        &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
                                                                     &trans            &trans            &trans      &trans
-            >;
-        };
-
-        poutea {
-            bindings = <
-                &kp K  &kp J             &kp F         &kp L         &kp M                     &hmr HOME B       &kp P            &kp O         &hmrs END U   &kp SQT
-                &kp Y  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT N  &kp H                     &kp D             &hmr RSHFT T     &hmr RCTRL E  &hmrs RALT A  &kp I
-                &kp Z  &kp X             &kp C         &kp V         &kp Q                     &kp W             &kp G            &kp COMMA     &kp DOT       &kp SLASH
-                                                       &trans        &trans                    &trans            &trans
             >;
         };
     };
