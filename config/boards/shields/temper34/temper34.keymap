@@ -59,9 +59,9 @@
 
         Colepoq {
             bindings = <
-                &kp Y  &kp W             &kp F         &kp P         &kp B                     &hmr HOME K       &kp L            &kp O         &hmrs END Q   &kp SQT
+                &kp Z  &kp W             &kp F         &kp P         &kp B                     &hmr HOME K       &kp L            &kp O         &hmrs END Q   &kp SQT
                 &kp U  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G                     &kp M             &hmr RSHFT N     &hmr RCTRL E  &hmrs RALT A  &kp I
-                &kp Z  &kp X             &kp C         &kp D         &kp V                     &kp J             &kp H            &kp COMMA     &kp DOT       &kp SLASH
+                &kp Y  &kp X             &kp C         &kp D         &kp V                     &kp J             &kp H            &kp COMMA     &kp DOT       &kp SLASH
                                                        &lt 1 SPACE   &hmr LCTRL TAB            &hmr RGUI ENTER   &hmr RSHFT BACKSPACE
             >;
         };
