@@ -69,8 +69,8 @@
         util {
             bindings = <
                 &hmrs F1 N1       &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5        &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0
-                &hmrs LGUI MINUS  &hmrs LALT LBKT  &hmr LCTRL RBKT  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
-                &none             &kp LPAR         &kp RPAR         &tdbt             &bt BT_CLR        &none       &none            &kp SEMI       &kp DOT           &kp BACKSLASH
+                &hmrs LGUI MINUS  &hmrs LALT LPAR  &hmr LCTRL RPAR  &hmr LSHFT EQUAL  &hmr F11 F12      &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs RGUI GRAVE
+                &kp LBKT          &kp LBRC         &kp RBRC         &kp RBKT          &tdbt             &bt BT_CLR     &none            &kp SEMI       &kp DOT           &kp BACKSLASH
                                                                     &trans            &trans            &trans      &trans
             >;
         };
