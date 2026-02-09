@@ -34,12 +34,13 @@
             tapping-term-ms = <200>;
         };
 
-        long: long {
+        gt_btclr: gt_btclr {
             compatible = "zmk,behavior-hold-tap";
-            label = "LONG";
-            bindings = <&bt>, <&kp>;
+            label = "GT_BTCLR";
 
-            #binding-cells = <2>;
+            bindings = <&bt BT_CLR &kp GT>;
+            #binding-cells = <0>;
+
             tapping-term-ms = <2000>;
             flavor = "tap-preferred";
         };
@@ -71,7 +72,7 @@
             bindings = <
 &kp Z  &kp W             &kp F         &kp P         &kp B             &hmr HOME K       &kp L           &kp O         &hmrs END Q   &hmrs GRAVE SQT
 &kp U  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G             &kp M             &hmr RSHFT N    &hmr RCTRL E  &hmrs RALT A  &kp I
-&kp Y  &kp X             &kp C         &kp D         &kp V             &long BT_CLR GT   &kp H           &kp COMMA     &kp DOT       &kp SLASH
+&kp Y  &kp X             &kp C         &kp D         &kp V             &kp J   &kp H           &kp COMMA     &kp DOT       &kp SLASH
                                        &lt 1 SPACE   &hmr LCTRL TAB    &hmr RSHFT ENTER  &hmr RGUI BSPC
             >;
         };
@@ -80,7 +81,7 @@
             bindings = <
 &hmrs F1 N1  &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5      &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0
 &kp MINUS    &hmrs LALT LPAR  &hmr LCTRL RPAR  &hmr LSHFT EQUAL  &hmr F11 F12    &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &hmrs SEMI COLON
-&kp LBKT     &kp LBRC         &kp RBRC         &kp RBKT          &tdbt           &kp GT      &kp PIPE         &trans         &trans            &kp BSLH
+&kp LBKT     &kp LBRC         &kp RBRC         &kp RBKT          &tdbt           &gt_btclr       &kp PIPE         &trans         &trans            &kp BSLH
                                                &trans            &trans          &trans      &trans
             >;
         };
