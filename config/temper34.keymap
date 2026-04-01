@@ -99,9 +99,9 @@
 
         HandsDown {
             bindings = <
-&kp Q  &kp C  &kp H  &kp P   &kp B     &kp X   &kp Y   &kp O   &kp U   &trans
-&kp R  &kp S  &kp N  &kp T   &kp G     &kp W   &kp F   &kp E   &kp I   &kp A
-&kp Z  &kp M  &kp L  &kp D   &kp V     &kp J   &kp K   &trans  &trans  &trans
+&kp Q  &kp W  &kp F  &kp P   &kp B     &kp X   &kp L   &kp O   &kp U   &trans
+&kp R  &kp N  &kp S  &kp T   &kp G     &kp Z   &kp H   &kp E   &kp I   &kp A
+&kp Y  &kp M  &kp C  &kp D   &kp V     &kp J   &kp K   &trans  &trans  &trans
                      &trans  &trans    &trans  &trans
             >;
         };
