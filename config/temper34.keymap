@@ -53,28 +53,16 @@
             bindings = <&caps_word>;
             key-positions = <31 32>;
         };
-
-        ESC_2 {
-            bindings = <&kp ESC>;
-            key-positions = <15 16>;
-            layers = <3>;
-        };
-
-        tog_3 {
-            bindings = <&tog 3>;
-            key-positions = <0 9>;
-            layers = <0 3>;
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Colepoq {
+        Alpha {
             bindings = <
-&kp Z  &kp W             &kp F         &kp P         &lt 2 B           &hmr HOME K       &kp L           &kp O         &hmrs END Q   &hmrs GRAVE SQT
-&kp U  &hmrs LEFT_ALT R  &hmr LCTRL S  &hmr LSHFT T  &kp G             &kp M             &hmr RSHFT N    &hmr RCTRL E  &hmrs RALT A  &kp I
-&kp Y  &kp X             &kp C         &kp D         &kp V             &kp J             &kp H           &kp COMMA     &kp DOT       &kp SLASH
+&kp Q  &kp W             &kp F         &kp P         &lt 2 B           &hmr HOME X       &kp L           &kp O         &hmrs END U   &hmrs GRAVE SQT
+&kp R  &hmrs LEFT_ALT N  &hmr LCTRL S  &hmr LSHFT T  &kp G             &kp Z             &hmr RSHFT H    &hmr RCTRL E  &hmrs RALT I  &kp A
+&kp Y  &kp M             &kp C         &kp D         &kp V             &kp J             &kp K           &kp COMMA     &kp DOT       &kp SLASH
                                        &lt 1 SPACE   &hmr LCTRL TAB    &hmr RSHFT ENTER  &hmr RGUI BSPC
             >;
         };
@@ -94,15 +82,6 @@
 &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none    &none  &none  &none  &none  &bt BT_CLR
                      &none  &none    &none  &none
-            >;
-        };
-
-        HandsDown {
-            bindings = <
-&kp Q  &kp W  &kp F  &kp P   &kp B     &kp X   &kp L   &kp O   &kp U   &trans
-&kp R  &kp N  &kp S  &kp T   &kp G     &kp Z   &kp H   &kp E   &kp I   &kp A
-&kp Y  &kp M  &kp C  &kp D   &kp V     &kp J   &kp K   &trans  &trans  &trans
-                     &trans  &trans    &trans  &trans
             >;
         };
     };
