@@ -4,24 +4,24 @@
 
 / {
     behaviors {
-        hmr: hmr {
+        hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HRM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
-            quick-tap-ms = <175>;
-            flavor = "tap-preferred";
+            quick-tap-ms = <100>;
+            flavor = "balanced";
         };
 
-        hmrs: hmrs {
+        hrms: hrms {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMRS";
+            label = "HRMS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
         };
 
@@ -48,11 +48,6 @@
             bindings = <&kp DELETE>;
             key-positions = <27 28>;
         };
-
-        caps {
-            bindings = <&caps_word>;
-            key-positions = <31 32>;
-        };
     };
 
     keymap {
@@ -60,19 +55,19 @@
 
         Alpha {
             bindings = <
-&kp Q  &kp W             &kp F         &kp P         &lt 2 B           &hmr HOME X       &kp L           &kp O         &hmrs END U   &hmrs GRAVE SQT
-&kp R  &hmrs LEFT_ALT N  &hmr LCTRL S  &hmr LSHFT T  &kp G             &kp Z             &hmr RSHFT H    &hmr RCTRL E  &hmrs RALT I  &kp A
+&kp Q  &kp W             &kp F         &kp P         &lt 2 B           &hrm HOME X       &hrm PG_DN L    &hrm PG_UP O  &hrms END U   &hrms GRAVE SQT
+&kp R  &hrms LEFT_ALT N  &hrm LCTRL S  &hrm LSHFT T  &kp G             &kp Z             &hrm RSHFT H    &hrm RCTRL E  &hrms RALT I  &kp A
 &kp Y  &kp M             &kp C         &kp D         &kp V             &kp J             &kp K           &kp COMMA     &kp DOT       &kp SLASH
-                                       &lt 1 SPACE   &hmr LCTRL TAB    &hmr RSHFT ENTER  &hmr RGUI BSPC
+                                       &lt 1 SPACE   &hrm LCTRL TAB    &hrm RSHFT ENTER  &hrm RGUI BSPC
             >;
         };
 
         util {
             bindings = <
-&hmrs F1 N1  &hmrs F2 N2      &hmr F3 N3       &hmr F4 N4        &hmr F5 N5       &hmr F6 N6  &hmr F7 N7       &hmr F8 N8     &hmrs F9 N9       &hmrs F10 N0
-&kp MINUS    &hmrs LALT LPAR  &hmr LCTRL RPAR  &hmr LSHFT EQUAL  &hmr F11 F12     &kp LEFT    &hmr RSHFT DOWN  &hmr RCTRL UP  &hmrs RALT RIGHT  &kp COLON
-&kp LBKT     &kp LBRC         &kp RBRC         &kp RBKT          &kp SEMICOLON    &kp GT      &kp PIPE         &trans         &trans            &kp BSLH
-                                               &trans            &trans           &trans      &trans
+&hrms F1 N1  &hrms F2 N2      &hrm F3 N3       &hrm F4 N4        &hrm F5 N5      &hrm F6 N6  &hrm F7 N7       &hrm F8 N8     &hrms F9 N9       &hrms F10 N0
+&kp MINUS    &hrms LALT LPAR  &hrm LCTRL RPAR  &hrm LSHFT EQUAL  &kp SEMI        &kp LEFT    &hrm RSHFT DOWN  &hrm RCTRL UP  &hrms RALT RIGHT  &kp COLON
+&kp LBKT     &kp LBRC         &kp RBRC         &kp RBKT          &hrm F11 F12    &kp GT      &kp PIPE         &trans         &trans            &kp BSLH
+                                               &trans            &trans          &trans      &trans
             >;
         };
 
