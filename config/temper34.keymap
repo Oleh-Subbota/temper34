@@ -55,14 +55,14 @@
 
         Alpha {
             bindings = <
-&kp Q  &kp W             &kp F         &kp P         &lt 2 B           &hrm HOME X       &hrm PG_DN L    &hrm PG_UP O  &hrms END U   &hrms GRAVE SQT
-&kp R  &hrms LEFT_ALT N  &hrm LCTRL S  &hrm LSHFT T  &kp G             &kp Z             &hrm RSHFT H    &hrm RCTRL E  &hrms RALT I  &kp A
-&kp Y  &kp M             &kp C         &kp D         &kp V             &kp J             &kp K           &kp COMMA     &kp DOT       &kp SLASH
-                                       &lt 1 SPACE   &hrm LCTRL TAB    &hrm RSHFT ENTER  &hrm RGUI BSPC
+&kp Q    &kp W             &kp F         &kp P         &kp B             &hrms HOME X      &hrms PG_DN L   &hrms PG_UP O  &hrms END U   &hrms GRAVE SQT
+&kp R    &hrms LEFT_ALT N  &hrm LCTRL S  &hrm LSHFT T  &kp G             &kp Z             &hrm RSHFT H    &hrm RCTRL E   &hrms RALT I  &kp A
+&lt 2 Y  &kp M             &kp C         &kp D         &kp V             &kp J             &kp K           &kp COMMA      &kp DOT       &kp SLASH
+                                         &lt 1 SPACE   &hrm LCTRL TAB    &hrm RSHFT ENTER  &hrm RGUI BSPC
             >;
         };
 
-        util {
+        symnum {
             bindings = <
 &hrms F1 N1  &hrms F2 N2      &hrm F3 N3       &hrm F4 N4        &hrm F5 N5      &hrm F6 N6  &hrm F7 N7       &hrm F8 N8     &hrms F9 N9       &hrms F10 N0
 &kp MINUS    &hrms LALT LPAR  &hrm LCTRL RPAR  &hrm LSHFT EQUAL  &kp SEMI        &kp LEFT    &hrm RSHFT DOWN  &hrm RCTRL UP  &hrms RALT RIGHT  &kp COLON
@@ -71,12 +71,12 @@
             >;
         };
 
-        bt {
+        util {
             bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &tdbt
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &bt BT_CLR
-                     &none  &none    &none  &none
+&none  &none      &none      &none      &none        &bt BT_CLR  &none       &none  &none  &tdbt
+&none  &kp LC(A)  &kp LC(C)  &kp LC(V)  &none        &none       &none       &none  &none  &none
+&none  &kp LC(Z)  &kp LC(X)  &none      &none        &none       &none       &none  &none  &none
+                             &kp ESC    &kp ENTER    &none       &kp DELETE
             >;
         };
     };
